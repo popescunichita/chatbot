@@ -1,0 +1,141 @@
+{
+  "intents": [
+    {
+      "tag": "cAppointmentInit",
+      "patterns": [
+        "să anulez programarea",
+        "să anulez o programare"
+      ],
+      "responses": [
+        "Vă rog să rostiți numele dumneavoastră şi al oraşului în care vă aflați.",
+        "Vă rog să îmi spuneți numele dumneavoastră şi al oraşului în care vă aflați.",
+        "Vă rog să îmi dați numele dumneavoastră şi al oraşului în care vă aflați."
+      ]
+    },
+    {
+      "tag": "cAppointment",
+      "patterns": [
+        "andrei florin bucureşti",
+        "popescu nichita bucureşti",
+        "radu ion bucureşti",
+        "andrei florin cluj",
+        "popescu nichita cluj",
+        "radu ion cluj",
+        "andrei florin timişoara",
+        "popescu nichita timişoara",
+        "radu ion timişoara"
+      ],
+      "responses": [
+        "Programarea dumneavoastră a fost anulată.",
+        "Am anulat programarea."
+      ]
+    },
+    {
+      "tag": "nAppointment",
+      "patterns": [
+        "să fac o nouă programare",
+        "să fac o programare",
+        "să mă programez",
+        "să creez o programare",
+        "să-mi fac o programare"
+      ],
+      "responses": [
+        "Vă rog să rostiți numele dumneavoastră.",
+        "Vă rog să îmi spuneți numele dumneavoastră.",
+        "Vă rog să îmi dați numele dumneavoastră."
+      ]
+    },
+    {
+      "tag": "name",
+      "patterns": [
+        "andrei florin",
+        "popescu nichita",
+        "radu ion"
+      ],
+      "responses": [
+        "Vă rog să specificați oraşul în care vă aflați.",
+        "Vă rog să îmi spuneți numele oraşului în care vă aflați.",
+        "Spuneți, vă rog, numele oraşului în care vă aflați."
+      ]
+    },
+    {
+      "tag": "city",
+      "patterns": [
+        "bucureşti",
+        "cluj",
+        "timişoara",
+        "iaşi"
+      ],
+      "responses": [
+        "Vă rog să specificați una dintre următoarele specializări: "
+      ]
+    },
+    {
+      "tag": "specialization",
+      "patterns": [
+        "cardiologie",
+        "pediatrie",
+        "oftalmologie",
+        "psihiatrie"
+      ],
+      "responses": [
+        "Vă rog alegeți unul dintre intervalele disponibile:"
+      ]
+    },
+    {
+      "tag": "interval",
+      "patterns": [
+        "luni nouă zece",
+        "marți nouă zece",
+        "miercuri nouă zece",
+        "joi nouă zece",
+        "vineri nouă zece"
+      ],
+      "responses": [
+        "Aveți o programare pe numele în intervalul . Dacă datele sunt corecte, vă rugam să rostiți cuvântul “corect”. Altfel, rostiți “incorect”.",
+        "Programarea a fost făcută pe numele în intervalul . Dacă datele sunt corecte, vă rugam să rostiți cuvântul “corect”. Altfel, rostiți “incorect”.",
+        "Ați fost programat pe numele în intervalul . Dacă datele sunt corecte, vă rugam să rostiți cuvântul “corect”. Altfel, rostiți “incorect”."
+      ]
+    },
+    {
+      "tag": "iCheck",
+      "patterns": [
+        "incorect",
+        "incorecte",
+        "datele sunt incorecte"
+      ],
+      "responses": [
+        "Vom relua procesul de programare. Vă rog să rostiți numele dumneavoastră.",
+        "Procesul de programare va fi reluat. Vă rog să îmi spuneți numele dumneavoastră.",
+        "Ne cerem scuze, vom relua procesul de programare. Vă rog să îmi dați numele dumneavoastră."
+      ]
+    },
+    {
+      "tag": "cCheck",
+      "patterns": [
+        "corect",
+        "corecte",
+        "datele sunt corecte"
+      ],
+      "responses": [
+        "Programarea dumneavoastră a fost înregistrată",
+        "Programarea dumneavoastră a fost realizată cu succes"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "la revedere",
+        "o zi bună",
+        "mulțumesc",
+        "vă mulțumesc",
+        "ok, vă mulțumesc",
+        "în regula, vă mulțumesc"
+      ],
+      "responses": [
+        "Vă dorim o zi bună",
+        "La revedere"
+      ]
+    }
+  ]
+}
